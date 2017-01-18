@@ -10,6 +10,7 @@ public class Main {
 		boolean second_test;
 		boolean third_test;
 		String aamlet = "success";
+		String var = "asdf"
 
 	}
 

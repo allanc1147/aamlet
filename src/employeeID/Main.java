@@ -8,6 +8,7 @@ public class Main {
 		test_image = ImageIO.read('hiddenLodge.jpg');
 		boolean test;
 		boolean second_test;
+		boolean third_test;
 
 	}
 

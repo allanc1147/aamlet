@@ -1,9 +1,11 @@
 package employeeID;
+import javax.imageio.*;
 
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		test_image = ImageIO.read('hiddenLodge.jpg');
 
 	}
 

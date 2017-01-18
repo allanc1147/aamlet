@@ -9,6 +9,7 @@ public class Main {
 		boolean test;
 		boolean second_test;
 		boolean third_test;
+		String aamlet = "success";
 
 	}
 

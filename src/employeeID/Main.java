@@ -6,6 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		test_image = ImageIO.read('hiddenLodge.jpg');
+		test_image = ImageIO.read('raptors.jpg');
 		boolean test;
 		boolean second_test;
 		boolean third_test;

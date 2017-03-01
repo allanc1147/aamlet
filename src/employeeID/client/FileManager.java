@@ -10,13 +10,14 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.util.SystemOutLogger;
 
 public class FileManager {
 
-    public static ArrayList excelReader(String path) {
+    public static ArrayList excelReader(File excel) {
       try
       {
-        FileInputStream file = new FileInputStream(new File(path));
+        FileInputStream file = new FileInputStream(excel);
 
         //Create Workbook instance holding reference to .xlsx file
         HSSFWorkbook workbook = new HSSFWorkbook(file);
@@ -50,6 +51,7 @@ public class FileManager {
         }
         file.close();
         System.out.println(all);
+        return all;
       }
       catch (Exception e)
       {
@@ -59,6 +61,6 @@ public class FileManager {
     }
 
     public static void main(String[] args) {
-      excelReader("/Users/marvinchui/Documents/Test.xls");
+      excelReader(new File("/Users/marvinchui/Documents/Test.xls"));
     }
   }
